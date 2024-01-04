@@ -76,6 +76,7 @@ export class BoardComponent implements OnInit {
     if (this.winner) {
       return;
     }
+    
 
 
     this.startGame = true
