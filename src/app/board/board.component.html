@@ -29,6 +29,8 @@
     />
     <div class="board-table">
       <ng-container *ngFor="let row of cells">
+        <!-- [ngClass] Binding: [ngClass] is an Angular binding that dynamically sets the CSS classes based on the conditions specified in the curly braces {}. -->
+        <!-- We are adding multiple coditional classes within [ngClass]-->
         <div
           *ngFor="let cell of row"
           class="board-cell"

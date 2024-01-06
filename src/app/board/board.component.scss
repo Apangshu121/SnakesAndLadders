@@ -24,13 +24,13 @@
 
 /* src/app/board/board.component.scss */
 .board-image {
-  width: 64%;
+  width: 60%;
   height: auto;
   object-fit: cover;
   pointer-events: none;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50;
   z-index: 0; /* Ensure the image is in front of the board-table */
 }
 
@@ -38,22 +38,23 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  grid-gap: 4px;
+  grid-gap: 2px;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50;
   z-index: 1; /* Ensure the board-table is behind the image */
   background-color: transparent; /* Make the entire grid transparent */
 }
 
 .board-cell {
+ // border: 2px solid red;
   position: relative; /* Set position to relative for player circles */
   text-align: center;
   font-weight: bold;
   background-color: transparent; /* Transparent background for all cells */
   height: 16px;
   width: 16px;
-  padding: 60.3px;
+  padding: 55.8px;
 
   .circle {
     width: 25%;

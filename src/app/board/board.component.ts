@@ -89,7 +89,7 @@ export class BoardComponent implements OnInit {
     const currentPlayer = this.getCurrentPlayer();
     currentPlayer.currCell = Math.min(this.diceValue+currentPlayer.currCell,30);
 
-    console.log(`${currentPlayer.name} is on cell: ${currentPlayer.currCell}`);
+   // console.log(`${currentPlayer.name} is on cell: ${currentPlayer.currCell}`);
 
     // Check for snakes and ladders
     const newPosition = this.checkSpecialCells(currentPlayer.currCell);
@@ -102,7 +102,7 @@ export class BoardComponent implements OnInit {
 
     if (currentPlayer.currCell >= 30) {
       this.winner=currentPlayer
-      console.log(`${currentPlayer.name} wins! Game Over.`);
+    //  console.log(`${currentPlayer.name} wins! Game Over.`);
       this.gameWinningSound.play()
       setTimeout(() => {
         this.router.navigate(['/']);
